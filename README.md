@@ -1,14 +1,14 @@
 ## Required 
 
-* After configuring your Vm 
+### After configuring your Vm 
 
-[Steps to configuring your vm with Lemp Stack + phpmyadmin ](config.md)
+* [Steps to configuring your vm with Lemp Stack + phpmyadmin ](config.md)
 
-Install Vagrant on your machine :
+* Install Vagrant on your machine.
 
 
 
-### Export your Vm : :
+### Export your Vm : 
 
 ```
 vagrant package --base [your machine name]
@@ -23,6 +23,7 @@ vagrant box add package.box --name [choose a name]
 ```
 vagrant box list
 ```
+
 ### Create your vagrant file :
 
 ```
@@ -39,6 +40,8 @@ vagrant shh
 ```
 * Login : Ur login  / password : your password
 
+If you want to browse :
+
 * Look at config.vm.network and uncomment the ligne , you can also modify the ip adresse with what you want .
 
 ```
@@ -46,3 +49,15 @@ vagrant reload
 ```
 
 * Browse Url : The Ip adresse .
+
+### Commands may help you :
+
+```
+* vagrant box status
+
+* vagrant global-status
+
+And of course :
+
+vagrant -h 
+```
