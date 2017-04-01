@@ -36,7 +36,7 @@ vagrant init [the choosen name ]
 vagrant up
 ```
 ```
-vagrant shh
+vagrant ssh
 ```
 * Login : Your login  / password : Your password
 
@@ -48,7 +48,7 @@ If you want to browse :
 vagrant reload
 ```
 
-* Browse Url : The Ip adresse .
+* Browse Url : The Ip adresse.
 
 ### Commands may help you :
 
