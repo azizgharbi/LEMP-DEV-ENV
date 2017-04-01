@@ -38,7 +38,7 @@ vagrant up
 ```
 vagrant shh
 ```
-* Login : Ur login  / password : your password
+* Login : Your login  / password : Your password
 
 If you want to browse :
 
@@ -53,11 +53,5 @@ vagrant reload
 ### Commands may help you :
 
 ```
-* vagrant box status
-
-* vagrant global-status
-
-And of course :
-
 vagrant -h 
 ```
