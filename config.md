@@ -1,18 +1,24 @@
 ## Required 
 
-Install Ubuntu 16.04 LTS on your virtuel machine and make sure that you can ping it from your local
-to verify  :
+Install Ubuntu 16.04 LTS on your Vm using vagrant :
 
-* Get your Virtuel machine IP :
 
-```
-sudo apt-get ifconfig
-```
 
-* Ping this IP adresse from your local machine :
+* Create the vagrant file :
 
 ```
-sudo apt-get ping YOUR_IP
+vagrant init hashicorp/precise64
+```
+
+* Uncomment the ligne that contain config.vm.network and get the Vm Ip adress to browse it and test :
+
+```
+vagrant up
+```
+* Access
+
+```
+vagrant ssh
 ```
 
 # LEMP ENV for DEV ubuntu 16.04
