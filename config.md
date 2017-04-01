@@ -1,16 +1,16 @@
 ## Required 
 
-Install Ubuntu 16.04 LTS on your Vm using vagrant :
+Install Ubuntu 16.04 LTS on your Vm using vagrant:
 
 
 
-* Create the vagrant file :
+* Create the vagrant file:
 
 ```
 vagrant init hashicorp/precise64
 ```
 
-* Uncomment the ligne that contain config.vm.network and get the Vm Ip adress to browse it and test :
+* Uncomment the ligne that contain "config.vm.network" and insert your Ip adresse in the Browser's adresse bar:
 
 ```
 vagrant up
@@ -43,7 +43,7 @@ sudo apt-get install nginx
 ```
 sudo ufw allow 'Nginx HTTP'
 ```
-### Check status , it should be activated .
+### Check status, it should be activated
 
 ```
 sudo ufw status
@@ -60,22 +60,22 @@ sudo apt-get install mysql-server
 ```
 ## Configuration php.ini
 
-You to open php.ini : sudo vi /etc/php/7.0/fpm/php.ini  and sereach that contain : cgi.fix_pathinfo=0
+You have to open php.ini : sudo vi /etc/php/7.0/fpm/php.ini  and search for the ligne that contains: "cgi.fix_pathinfo=0"
 
-uncomment the ligne and change it to cgi.fix_pathinfo=1
+uncomment the ligne and change it to "cgi.fix_pathinfo=1"
 
-### then restart : 
+### then restart: 
 
 ```
 sudo systemctl restart php7.0-fpm
 ```
-## Check the server Configuration :
+## Check the server's configuration:
 
 
 ```
 sudo vi /etc/nginx/sites-available/default
 ```
-## File Exemple :
+## File Example :
 
 ```
 server {
@@ -102,7 +102,7 @@ server {
 }
 
 ```
-## Test the configuration : 
+## Test the configuration: 
 
 ```
 sudo nginx -t
@@ -113,7 +113,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-### Check with a php file in /var/www/html : 
+### Check with a php file in /var/www/html: 
 
 ```
 <?php 
